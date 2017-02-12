@@ -56,18 +56,9 @@
 			} //end itemsLeft
 
 			function displayNewTodo( newItem ) {
-				//replaced below with handlebars stuff//
-				// $( '.list-item' ).first().clone().appendTo( '.items' );
-				// $( '.list-item p' ).last().html( `${newItem}` );
-				// $( '.list-item' ).last().removeClass( 'hide' );
-				const source = $( '#list-item' ).html();
-				const template = Handlebars.compile( source );
-				const context = {
-					newItem: newItem
-				};
-				const html = template( context );
-				$( '.items' ).prepend(html );
-
+				$( '.list-item' ).first().clone().appendTo( '.items' );
+				$( '.list-item p' ).last().html( `${newItem}` );
+				$( '.list-item' ).last().removeClass( 'hide' );
 			} //end displayNewTodo
 
 			function init() {

@@ -1,2 +1,2 @@
-# todo-list
-jquery to do list!
+# fee-todo
+Beginnings of a TODO list application

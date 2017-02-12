@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <h1>todos</h1>
+    <h1>questi di fare</h1>
   </header>
 
   <main>
@@ -26,17 +26,7 @@
     </form>
 
     <ul class='items'>
-
-      <!-- Example of a single TODO item -->
-      <!-- Note that this one is hidden on the page! -->
-      <li class= 'list-item hide'>
-        <article>
-          <button class='check'></button>
-          <p>[INSERT TODO TEXT HERE]</p>
-          <button class='delete'>X</button>
-        </article>
-      </li>
-
+<!-- insert list-item handlebar here -->
     </ul>
 
     <footer>
@@ -52,8 +42,15 @@
     </footer>
   </main>
 
-  <!-- <script id="todo-list" type="text/x-handlebars-template"> -->
-  <!-- </script> -->
+  <script id='list-item' type='text/x-handlebars-template'>
+    <li class='list-item'>
+      <article>
+        <button class='check'></button>
+        <p>{{newItem}}</p>
+        <button class='delete'>X</button>
+      </article>
+    </li>
+  </script>
 
   <script src="js/vendor/jquery-3.1.1.min.js"></script>
   <script src="js/vendor/handlebars-v4.0.5.js"></script>
